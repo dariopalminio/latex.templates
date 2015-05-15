@@ -12,23 +12,29 @@
 \usepackage{lmodern}
 \usepackage{graphicx}
 
+% Redefinir los nombres en español
+\renewcommand{\contentsname}{Índice}
+\renewcommand{\chaptername}{Capítulo}
+\renewcommand{\bibname}{Bibliografía} % bibliografia en español
+\renewcommand{\figurename}{Figura}
+
 \graphicspath{ {images/} }
 
-\title{System Architecture}
+\title{Arquitectura de Sistema}
 \author{Dario A. Palminio}
 
 \begin{document}
 
 \maketitle
 
-Documentation control
+Control de documento
 
 %% Document Version Control (Table)
 \begin{table}[h]
 \begin{tabular}{lllll}
 \cline{1-4}
-\multicolumn{1}{|l|}{Date}       & \multicolumn{1}{l|}{Author}         & \multicolumn{1}{l|}{Version} & \multicolumn{1}{l|}{Detail}   &  \\ \cline{1-4}
-\multicolumn{1}{|l|}{05/05/2015} & \multicolumn{1}{l|}{Dario Palminio} & \multicolumn{1}{l|}{1.0}     & \multicolumn{1}{l|}{Creation} &  \\ \cline{1-4}
+\multicolumn{1}{|l|}{Fecha}       & \multicolumn{1}{l|}{Autor}         & \multicolumn{1}{l|}{Versión} & \multicolumn{1}{l|}{Detalle}   &  \\ \cline{1-4}
+\multicolumn{1}{|l|}{05/05/2015} & \multicolumn{1}{l|}{Dario Palminio} & \multicolumn{1}{l|}{1.0}     & \multicolumn{1}{l|}{Creación} &  \\ \cline{1-4}
                                  &                                     &                              &                               &  \\
                                  &                                     &                              &                               & 
 \end{tabular}
@@ -37,30 +43,30 @@ Documentation control
 
 \tableofcontents
 
-\chapter{Introduction}
+\chapter{Introducción}
 % text
 
-\section{Purpose of the document}
+\section{Objetivo del documento}
 % text
 
-\section{Audience}
+\section{Audiencia}
 % text
 
-\chapter{Architecture}
+\chapter{Arquitectura}
 % text
 
-\section{Scope and Context}
+\section{Alcance y contexto}
 
-Scope and Context paragraph.
+Ejemplo de alcance y contexto.
 
 \begin{figure}[h] % Diagram
   \includegraphics{image_001}
-  \caption{Context Diagram}
+  \caption{Diagrama de contexto}
   \centering
   \label{fig:context} %\ref{fig:context}
 \end{figure}
 
-\section{High-level Architecture}
+\section{Arquitectura de Alto Nivel}
 % text
 
 \end{document}

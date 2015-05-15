@@ -1,4 +1,4 @@
-Proyecto Plantilla Ejemplo de un Libro LaTex en Español 
+Plantilla LaTex para un documento de arquitectura de sistema en español.
 Dario A. Palminio
 
 Edition tool: LaTeXila
