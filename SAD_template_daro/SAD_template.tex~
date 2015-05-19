@@ -1,0 +1,66 @@
+%% 
+%% Latex template to System Architecture Document
+%% Author: Dario A. Palminio
+%% LaTeX version 2.0
+%% OS: Ubuntu
+%% Editor: LaTeXila 2.4.0
+%% 
+
+\documentclass[a4paper,11pt]{book}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{graphicx}
+
+\graphicspath{ {images/} }
+
+\title{System Architecture}
+\author{Dario A. Palminio}
+
+\begin{document}
+
+\maketitle
+
+Documentation control
+
+%% Document Version Control (Table)
+\begin{table}[h]
+\begin{tabular}{lllll}
+\cline{1-4}
+\multicolumn{1}{|l|}{Date}       & \multicolumn{1}{l|}{Author}         & \multicolumn{1}{l|}{Version} & \multicolumn{1}{l|}{Detail}   &  \\ \cline{1-4}
+\multicolumn{1}{|l|}{05/05/2015} & \multicolumn{1}{l|}{Dario Palminio} & \multicolumn{1}{l|}{1.0}     & \multicolumn{1}{l|}{Creation} &  \\ \cline{1-4}
+                                 &                                     &                              &                               &  \\
+                                 &                                     &                              &                               & 
+\end{tabular}
+\end{table}
+%% 
+
+\tableofcontents
+
+\chapter{Introduction}
+% text
+
+\section{Purpose of the document}
+% text
+
+\section{Audience}
+% text
+
+\chapter{Architecture}
+% text
+
+\section{Scope and Context}
+
+Scope and Context paragraph.
+
+\begin{figure}[h] % Diagram
+  \includegraphics{image_001}
+  \caption{Context Diagram}
+  \centering
+  \label{fig:context} %\ref{fig:context}
+\end{figure}
+
+\section{High-level Architecture}
+% text
+
+\end{document}

@@ -1,0 +1,124 @@
+%% 
+%% Latex template to Software Architecture Document SAD [Clements 2003]
+%% Author: Dario A. Palminio
+%% LaTeX version 2.0
+%% OS: Ubuntu
+%% Editor: LaTeXila 2.4.0
+%% 
+
+\documentclass[a4paper,11pt]{book}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{graphicx}
+
+\graphicspath{ {images/} }
+
+\title{Software Architecture Documentation}
+\author{Dario A. Palminio}
+
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+
+\chapter{Documentation Roadmap and Overview}
+% text
+
+\section{Purpose and Scope of the SAD}
+This section explains the SAD’s overall purpose and scope, the criteria for deciding which design decisions are architectural (and therefore documented in the SAD), and which design decisions are non-architectural (and therefore documented elsewhere).
+
+\section{How the SAD Is Organized}
+This section provides a narrative description of the seven major sections of the SAD and the overall contents of each. Readers seeking specific information can use this section to help them locate it more quickly.
+
+\chapter{Architecture Background}
+The following sections provide a brief background on the system.
+
+\section{Problem Background}
+The sub-parts of this section explain the constraints that provided the significant influence over the architecture.
+
+\subsection{System Overview}
+This section describes the general function and purpose for the system or subsystem whose architecture is described in this SAD.
+
+\subsection{Context}
+This section describes the goals and major contextual factors for the software architecture. The section includes a description of the role software architecture plays in the life cycle, the relationship to system engineering results and artifacts, and any other relevant factors.
+
+\begin{figure}[h] % Diagram
+  \includegraphics{image_001}
+  \caption{Context Diagram}
+  \centering
+  \label{fig:context} %\ref{fig:context}
+\end{figure}
+
+\subsection{Driving Requirements}
+This section lists the functional requirements quality attributes and design constraints. It may point to a separate requirements document.
+
+\section{Solution Background}
+The sub-parts of this section provide a description of why the architecture is the way that it is, and a convincing argument that the architecture is the right one to satisfy the behavioral and quality attribute goals levied upon it.
+
+\subsection{Architectural Approaches}
+This section provides a rationale for the major design decisions embodied by the software architecture. It describes any design approaches applied to the software architecture, including the use of architectural styles or design patterns, when the scope of those approaches transcends any single architectural view. The section also provides a rationale for the selection of those approaches. It also describes any significant alternatives that were seriously considered and why they were ultimately rejected. The section describes any relevant COTS issues, including any associated trade studies.
+
+\subsection{Analysis Results}
+This section describes the results of any quantitative or qualitative analyses that have been performed that provide evidence that the software architecture is fit for purpose. If an Architecture Tradeoff Analysis Method evaluation has been performed, it is included in the analysis sections of its final report. This section refers to the results of any other relevant trade studies, quantitative modeling, or other analysis results.
+
+\subsection{Mapping Requirements to Architecture}
+This section describes the requirements (original or derived) addressed by the software architecture, with a short statement about where in the architecture each requirement is addressed.
+
+\chapter{Architecture Views}
+
+\section{Views}
+Architecture Views specify the software architecture. Views specify elements of software and the relationships between them. A view is a representation of one or more structures present in the software. This document comprises a multi-view approach of the architecture. However, unlike the prescribed set of views advocated by models such as the "4+1 View Model" [Kruchten 1995; see Referenced Materials section], it follows a more modern trend of selecting the most useful views to describe the system at hand. As with much of the architectural documentation of successful open source projects, these views concentrate on components-and-connectors diagrams and sequence diagrams.
+
+\subsection{Generic Component}
+Add Description + Details + Diagrams + Core Interface Catalog.
+
+\subsection{Generic Orchestration}
+Add Overview + Details + Diagrams + Orchestration Class Diagram
+
+\section{Mapping Between Views}
+Each of the views specified in Views provides a different perspective and design handle on a system, and each is valid and useful in its own right. Although the views give different system perspectives, they are not independent. Elements of one view will be related to elements of other views, and we need to reason about these relations. For example, a module in a decomposition view may be manifested as one, part of one, or several components in one of the component-and-connector views, reflecting its runtime alter-ego. In general, mappings between views are many to many. This section describes the relations that exist among the view. As required by ANSI/IEEE 1471-2000, it also describes any known inconsistencies among the views.
+
+\chapter{Referenced Materials}
+
+This section provides citations for each reference document and reflects.
+\newline
+
+[Clements 2003]
+Documenting Software Architectures: Views and Beyond. Paul Clements, et al. Reading, MA: Addison-Wesley, 2003.
+\newline
+
+[Malveau 2004]
+Software Architect BOOTCAMP. The completely updated field manual for becoming a better software architect! Raphael Malveau, Thomas J. Mowbray Ph.D. Prentice All, Second Edition, 2004 Pearson Education Inc.ISBN: 0-13-141227-2. 
+\newline
+
+\chapter{Glossary and Acronyms}
+
+\begin{table}[h]
+\begin{tabular}{lllll}
+\cline{1-2}
+\multicolumn{1}{|l|}{Name} & \multicolumn{1}{l|}{Detail}                              &  &  &  \\ \cline{1-2}
+\multicolumn{1}{|l|}{SAD}  & \multicolumn{1}{l|}{Software Architecture Documentation} &  &  &  \\ \cline{1-2}
+\multicolumn{1}{|l|}{SW}   & \multicolumn{1}{l|}{Software}                            &  &  &  \\ \cline{1-2}
+                           &                                                          &  &  & 
+\end{tabular}
+\end{table}
+
+\chapter{Document Management and Configuration Control Information}
+
+This section identifies the version, release date, and other relevant management and configuration control information associated with the current version of these pages. A change history and/or an overview of significant changes might be added to this section in the future, but is not included at this time.
+
+%% Document Version Control (Table)
+\begin{table}[h]
+\begin{tabular}{lllll}
+\cline{1-4}
+\multicolumn{1}{|l|}{Date}       & \multicolumn{1}{l|}{Author}         & \multicolumn{1}{l|}{Version} & \multicolumn{1}{l|}{Detail}   &  \\ \cline{1-4}
+\multicolumn{1}{|l|}{05/05/2015} & \multicolumn{1}{l|}{Dario Palminio} & \multicolumn{1}{l|}{1.0}     & \multicolumn{1}{l|}{Creation} &  \\ \cline{1-4}
+                                 &                                     &                              &                               &  \\
+                                 &                                     &                              &                               & 
+\end{tabular}
+\end{table}
+%% 
+
+\end{document}
