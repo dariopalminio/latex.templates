@@ -45,23 +45,37 @@ git push -u origin master
 LaTeX Resources:
 ----------------
 
-LaTeX Tutorial:
+- LaTeX Tutorial:
 http://en.wikibooks.org/wiki/LaTeX
 http://www.tug.org.in/tutorials.html
 http://ftp.inf.utfsm.cl/pub/tex-archive/info/simplified-latex/simplified-intro.pdf
 http://www.math.harvard.edu/texman
 
-Tables online:
+- Tables online:
 http://www.tablesgenerator.com
 http://truben.no/table
 
-Ecuations online:
+- Ecuations online:
 http://www.codecogs.com/latex/eqneditor.php?lang=en-en
 http://www.numberempire.com/texequationeditor/equationeditor.php
 http://rinconmatematico.com/latexrender
 
-Editor online:
+- Editor online:
 http://jaxedit.com/note
 http://arachnoid.com/latex
+
+
+LaTeX Tools on Ubuntu:
+----------------------
+
+- LaTeXila
+- mk4ht (apt-get install mk4ht)
+
+LaTeX Tools on Windows:
+----------------------
+
+- Miktex
+- LEd (Latex Editor)
+
 
 
